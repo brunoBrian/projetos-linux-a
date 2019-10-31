@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" src="../src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div style="margin: 0 auto; width: 500px;">
+    
+      <input type='text' id='inputText' placeholder="CEP" />
+      <input type='button' id='inputButton' value="Buscar" />
+
+      <h5 class="status"></h5>
+
+      <div>
+        <div style="display: flex; align-items: center;">
+          <h2>Logradouro: </h2>
+          <span class="logradouro"></span>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <h2>Bairro: </h2>
+          <span class="bairro"></span>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <h2>Estado: </h2>
+          <span class="estado"></span>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <h2>Cidade: </h2>
+          <span class="cidade"></span>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <h2>CEP: </h2>
+          <span class="cep"></span>
+        </div>
+      </div>
+
+      <form method="post" action='/'>
+
+        <label>Nome:</label>
+        <input type='text' data-js='input-name' />
+        <br><br>
+
+        <label>Idade:</label>
+        <input type='text' data-js='input-idade' />
+        <br><br>
+
+        <label>Profissão:</label>
+        <input type='text' data-js='input-profissao' />
+        <br><br>
+        
+        <input type="submit" value="Submit" data-js='input-submit'>
+      </form>
+    </div>
+
+    <div class="lista-usuarios">
+      
+    </div>
+    
+    <script type="text/javascript" src="../src/index.js"></script>
+  </body>
+</html>

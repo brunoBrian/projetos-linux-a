@@ -1,0 +1,3 @@
+rootProject.name = 'randonNumber'
+
+include ':app'
